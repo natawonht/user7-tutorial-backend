@@ -68,10 +68,10 @@ jobs:
       uses: github/codeql-action/analyze@v2
 
     # THIS IS INTERNAL ACITON ACCESS ONLY INTERNAL OGANIZAITON
-    # - name: Quality Gate Check
-    #   uses: <owner>/quality-gate-action@main
-    #   with:
-    #     repository: <owner>/xxx-xxxxxx
-    #     severity: high
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+    - name: Quality Gate Check
+      uses: natawonht/quality-gate-action@main
+      with:
+        repository: natawonht/user7-tutorial-backend
+        severity: high
+      env:
+        GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}

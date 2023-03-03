@@ -67,14 +67,14 @@ jobs:
   #   - name: Perform CodeQL Analysis
   #     uses: github/codeql-action/analyze@v2
 
-  #   # THIS IS INTERNAL ACITON ACCESS ONLY INTERNAL OGANIZAITON
-  #   # - name: Quality Gate Check
-  #   #   uses: natawonht/quality-gate-action@main
-  #   #   with:
-  #   #     repository: natawonht/user7-tutorial-backend
-  #   #     severity: high
-  #   #   env:
-  #   #     GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+    # THIS IS INTERNAL ACITON ACCESS ONLY INTERNAL OGANIZAITON
+#     - name: Quality Gate Check
+#       uses: natawonht/quality-gate-action@main
+#       with:
+#         repository: natawonht/user7-tutorial-backend
+#         severity: high
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
 
   repo-dispatch:
     name: Repository Dispatch
